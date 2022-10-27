@@ -1,0 +1,35 @@
+/* Header Rules */
+header{
+    height: 100px;
+    /* DEBUG */
+    background-color: red;
+}
+
+nav{
+    width: 60px;
+    min-height: calc(100vh - 100px);
+    position: fixed;
+    /* DEBUG */
+    background-color: blue;
+}
+
+main{
+    width: calc(100% -  60px);
+    min-height: 100vh;
+    margin: 100px 0 0 60px;
+    /* DEBUG */
+    background-color: blueviolet;
+}
+
+/* Media Query */
+@media screen and (min-width: 992px){
+    nav{
+        width: 150px;
+    }
+
+    main{
+        margin-left: 150px;
+
+    }
+
+}
