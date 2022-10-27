@@ -48,6 +48,7 @@ nav{
     top:0px;
     bottom: 0px;
     left: 0px;
+    width: 70px;
 }
 
 .left-menu span{
@@ -137,17 +138,17 @@ main{
         display: block;
     }
 
-    .ms_todo{
-        /* DEBUG */
-        height: 30%;
-        background-color: royalblue;
-    }
+.ms_todo{
+    /* DEBUG */
+    height: 30%;
+    
+}
 
-    .ms_graphic{
-        /* DEBUG */
-        height: 70%;
-        background-color: crimson;
-    }
+.ms_graphic{
+    /* DEBUG */
+    /* height: 70%;
+    background-color: crimson; */
+}
 
 main .row{
     /* DEBUG */
@@ -160,4 +161,11 @@ main [class*="col-"]{
     /* DEBUG */
     /* background-color: darkgoldenrod;
     border: 2px solid black; */
+}
+
+/* Media Quary */
+@media screen and (min-width: 992px){
+    .left-menu{
+        width: 160px;
+    }
 }
