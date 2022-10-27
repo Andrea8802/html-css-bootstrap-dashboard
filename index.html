@@ -17,14 +17,25 @@
 </head>
 <body>
     
+    <!-- Header -->
     <header class="fixed-top d-flex justify-content-evenly align-items-center">
+        <!-- Small Logo -->
         <img src="img/logo-small.png" alt="logo small" class=" ms_logo_md d-lg-none">
+
+        <!-- Large Logo -->
         <img src="img/logo.svg" alt="Logo Large" class="d-none d-lg-inline-block">
+
+        <!-- Search Bar -->
         <input type="search" id="ms_search" placeholder="Prova a cercare: Lezioni di Lavarel">
+
+        <!-- Notifications -->
         <i class="fa-solid fa-bell" id="ms_bell"></i>
     </header>
+
     <div class="container-fluid">
         <div class="row justify-content-end">
+
+            <!-- Left Menu -->
             <div class="left-menu col-1 col-lg-2 px-0">
                 <nav class="d-flex flex-column justify-content-between align-items-center">
                     <div class="text-white pt-4 d-flex flex-column justify-content-evenly gap-4">
@@ -61,19 +72,61 @@
                 </nav>
             </div>
             
+            <!-- Main -->
             <div class="col-11 col-lg-10 px-0">
                 <main>
-                    <section class="ms_section1 container-fluid">
-                        <div class="row justify-content-between mx-0">
-                            <div class="col-12 col-lg-4"></div>
-                            <div class="col-12 col-lg-4"></div>
+
+                    <!-- First Section -->
+                    <section class="ms_section1 container-fluid py-3">
+                        <div class="row justify-content-between align-items-center mx-0">
+                            <div class="col-12 col-lg-4 text-white py-3">
+                                <h2 class="d-inline-block fw-semibold fs-1">
+                                    Boolean
+                                </h2>
+                                <span class="ms_label">
+                                    Piano Blaze
+                                </span>
+                                <div>
+                                    <span class="ms_label">
+                                        3 app
+                                    </span>
+                                    <i class="fa-solid fa-angles-right mx-1"></i>
+
+                                    <span class="ms_label">
+                                        &plus;
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-white fw-semibold fs-5 py-2">
+                                <div>
+                                    Studenti online negli ultimi 30 minuti
+                                </div>
+                                <div class="fs-1">
+                                    125
+                                </div>
+                            </div>
                         </div>
                     </section>
             
+                    <!-- Second Section -->
                     <section class="ms_section2 container-fluid">
                         <div class="row mx-0">
                             <div class="col-12 col-lg-8">
-                                <div class="ms_classes"></div>
+                                <div class="ms_classes">
+                                    <h2>
+                                        Prossime Clasi
+                                    </h2>
+
+                                    <div>
+                                        <div class="row fw-bold">
+                                            <div class="col-6 d-flex justify-content-start">
+                                                Nome
+                                            </div>
+
+                                            <div class="col-6"></div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="ms_faq"></div>
                             </div>
             
