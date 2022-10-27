@@ -1,8 +1,39 @@
 /* Header Rules */
 header{
     height: 100px;
-    /* DEBUG */
-    background-color: darkviolet;
+    background-color: white;
+}
+
+header img{
+    height: 40%;
+}
+
+#ms_search{
+    width: 80%;
+    height: 50px;
+    padding: 5px;
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 5px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    padding-left: 40px;
+}
+
+#ms_search:focus{
+    outline: none;
+    border: 1px solid gray;
+}
+
+#ms_search::placeholder{
+    opacity: 0.8;
+}
+
+#ms_bell{
+    color: #ff8f00;
+    font-size: 20px;
 }
 
 /* Nav Rules */
