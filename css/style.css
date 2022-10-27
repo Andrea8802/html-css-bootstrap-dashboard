@@ -1,6 +1,11 @@
+/* General Rules */
+.ms_space-right{
+    border-right: 0px solid white;
+}
+
 /* Header Rules */
 header{
-    height: 100px;
+    height: 80px;
     background-color: white;
 }
 
@@ -10,7 +15,7 @@ header{
 
 #ms_search{
     width: 80%;
-    height: 50px;
+    height: 45px;
     padding: 5px;
     background-color: #e5e5e5;
     border: none;
@@ -24,7 +29,7 @@ header{
 
 #ms_search:focus{
     outline: none;
-    border: 1px solid gray;
+    border: 2px solid gray;
 }
 
 #ms_search::placeholder{
@@ -39,30 +44,27 @@ header{
 /* Nav Rules */
 nav{
     height: 100%;
-    padding-top: 100px;
+    padding-top: 80px;
     background-color: #051e34;
-}
-
-.left-menu{
     position: fixed;
     top:0px;
     bottom: 0px;
     left: 0px;
-    width: 70px;
+    width: 60px;
 }
 
-.left-menu span{
+nav span{
     font-size: 18px;
 }
 
-.left-menu i{
+nav i{
     font-size: 22px;
 }
 
 /* Main Rules */
 main{
     min-height: 100vh;
-    margin-top: 100px;
+    margin: 80px 0 0 60px;
 }
 
 .ms_section_directory{
@@ -78,7 +80,7 @@ main{
 
 .ms_section_boxs{
     /* DEBUG */
-    height: 1500px;
+    height: 100vh;
 }
 
 .ms_classes{
@@ -93,8 +95,10 @@ main{
         color: white;
         background-color: #f0634f;
         border-radius: 50%;
-        padding: 2px 7px;
         font-size: 25px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
     }
 
     .ms_class_label{
@@ -125,47 +129,33 @@ main{
         font-size: 20px;
         color: gray;
     }
-    
-.ms_faq{
-    /* DEBUG */
-    height: 30%;
+
+.ms_answer{
+    text-decoration: none;
+    color: black;
+    padding: 15px 0 20px;
+    display: block;
 }
 
-    .ms_answer{
-        text-decoration: none;
-        color: black;
-        padding: 15px 0 20px;
-        display: block;
-    }
 
-.ms_todo{
-    /* DEBUG */
-    height: 30%;
-    
-}
-
-.ms_graphic{
-    /* DEBUG */
-    /* height: 70%;
-    background-color: crimson; */
-}
-
-main .row{
-    /* DEBUG */
-    /* height: 100%;
+.ms_faq a{
     width: 100%;
-    background-color: chartreuse; */
 }
 
-main [class*="col-"]{
-    /* DEBUG */
-    /* background-color: darkgoldenrod;
-    border: 2px solid black; */
+.ms_graphic img{
+    width: 100%;
 }
 
 /* Media Quary */
 @media screen and (min-width: 992px){
-    .left-menu{
-        width: 160px;
+    nav{
+        width: 150px;
+    }
+    main{
+        margin-left: 150px;
+    }
+
+    .ms_space-right{
+        border-right: 25px solid white;
     }
 }
