@@ -75,21 +75,25 @@ main{
         font-weight: 500;
     }
 
-.ms_section_tabs{
+.ms_section_boxs{
     /* DEBUG */
     height: 1500px;
 }
 
+.ms_classes{
+    height: 70%;
+}
+
+    .ms_title_box{
+        background-color: #f7f7f7;
+    }
+    
     .ms_class_icon{
         color: white;
         background-color: #f0634f;
         border-radius: 50%;
         padding: 2px 7px;
         font-size: 25px;
-    }
-
-    .ms_classes{
-        height: 70%;
     }
 
     .ms_class_label{
@@ -103,15 +107,35 @@ main{
             background-color: #188653;
         }
 
+        .ms_class_label.ms_yellow{
+            background-color: #ffc008;
+
+        }
+
+        .ms_class_label.ms_red{
+            background-color: #dc3545;
+        }
+
+
     .ms_class_action i{
         border: 2px solid gray;
+        border-radius: 5px;
+        padding: 7px 7px;
+        font-size: 20px;
+        color: gray;
     }
     
-    .ms_faq{
-        /* DEBUG */
-        /* height: 30%;
-        background-color: crimson;
-    } */
+.ms_faq{
+    /* DEBUG */
+    height: 30%;
+}
+
+    .ms_answer{
+        text-decoration: none;
+        color: black;
+        padding: 15px 0 20px;
+        display: block;
+    }
 
     .ms_todo{
         /* DEBUG */
