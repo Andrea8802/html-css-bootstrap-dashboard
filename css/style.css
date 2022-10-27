@@ -64,35 +64,54 @@ main{
     margin-top: 100px;
 }
 
-.ms_section1{
+.ms_section_directory{
     background-color: #1b72e8;
 }
 
     .ms_label{
         background-color: rgba(0, 0, 0, 0.3);
-        padding: 2px 10px 5px 10px;
+        padding: 2px 10px 5px;
         border-radius: 20px;
         font-weight: 500;
     }
 
-.ms_section2{
+.ms_section_tabs{
     /* DEBUG */
     height: 1500px;
-    width: 100%;
-    background-color: coral;
 }
 
-    .ms_classes{
-        /* DEBUG */
-        height: 70%;
-        background-color: royalblue;
+    .ms_class_icon{
+        color: white;
+        background-color: #f0634f;
+        border-radius: 50%;
+        padding: 2px 7px;
+        font-size: 25px;
     }
 
+    .ms_classes{
+        height: 70%;
+    }
+
+    .ms_class_label{
+        color: white;
+        padding: 1px 5px 3px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+        .ms_class_label.ms_green{
+            background-color: #188653;
+        }
+
+    .ms_class_action i{
+        border: 2px solid gray;
+    }
+    
     .ms_faq{
         /* DEBUG */
-        height: 30%;
+        /* height: 30%;
         background-color: crimson;
-    }
+    } */
 
     .ms_todo{
         /* DEBUG */
