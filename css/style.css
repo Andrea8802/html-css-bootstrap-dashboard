@@ -2,34 +2,71 @@
 header{
     height: 100px;
     /* DEBUG */
-    background-color: red;
+    background-color: darkviolet;
 }
 
+/* Nav Rules */
 nav{
-    width: 60px;
-    min-height: calc(100vh - 100px);
-    position: fixed;
+    height: calc(100% - 100px);
+    margin-top: 100px;
     /* DEBUG */
     background-color: blue;
 }
-
+/* Main Rules */
 main{
-    width: calc(100% -  60px);
     min-height: 100vh;
-    margin: 100px 0 0 60px;
+    margin-top: 100px;
     /* DEBUG */
     background-color: blueviolet;
 }
 
-/* Media Query */
-@media screen and (min-width: 992px){
-    nav{
-        width: 150px;
+.ms_section1{
+    /* DEBUG */
+    height: 250px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.ms_section2{
+    /* DEBUG */
+    height: 1500px;
+    width: 100%;
+    background-color: coral;
+}
+
+    .ms_classes{
+        /* DEBUG */
+        height: 70%;
+        background-color: royalblue;
     }
 
-    main{
-        margin-left: 150px;
-
+    .ms_faq{
+        /* DEBUG */
+        height: 30%;
+        background-color: crimson;
     }
 
+    .ms_todo{
+        /* DEBUG */
+        height: 30%;
+        background-color: royalblue;
+    }
+
+    .ms_graphic{
+        /* DEBUG */
+        height: 70%;
+        background-color: crimson;
+    }
+
+main .row{
+    /* DEBUG */
+    height: 100%;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+main [class*="col-"]{
+    /* DEBUG */
+    background-color: darkgoldenrod;
+    border: 2px solid black;
 }
