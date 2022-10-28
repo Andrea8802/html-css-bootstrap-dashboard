@@ -32,7 +32,19 @@
         <i class="fa-solid fa-list d-none d-lg-flex"></i>
         <i class="fa-solid fa-circle-question d-none d-lg-flex"></i>
         <i class="fa-solid fa-ellipsis-vertical d-none d-lg-flex"></i>
-        <i class="fa-solid fa-bell" id="ms_bell"></i>
+
+        <!-- Bell Icon Dropdown -->
+        <div class="dropdown">
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bell" id="ms_bell"></i>
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
     </header>
 
     <div class="container-fluid">
@@ -116,11 +128,52 @@
                                 <div class="col-12 border rounded">
                                     <div class="ms_classes">
                                         <div class="row ms_title_box border-bottom">
-                                            <div class="col-12">
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
                                                 <h2 class="py-3 fw-semibold">
                                                     Prossime Classi
                                                 </h2>
+
+
+                                                <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                                    <i class="fa-solid fa-plus ms_class_add"></i>
+                                                </a>
+
+                                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                                  <div class="offcanvas-header">
+                                                    <h5 class="offcanvas-title fw-semibold" id="offcanvasRightLabel">
+                                                        Aggiungi Classe
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="offcanvas-body ms_canvas_text">
+                                                    <form action="#">
+                                                        <label for="#" class="fw-semibold">
+                                                            Nome
+                                                        </label> <br>
+                                                        
+                                                        <input type="text" name="Classe" placeholder="Classe —" class="mb-3 mt-1 py-1 px-2"> <br>
+
+                                                        <label for="#" class="fw-semibold">
+                                                            Data Inizio
+                                                        </label> <br>
+
+                                                        <input type="date" name="Data class="class="mb-3 mt-1 py-1 px-2"> <br>
+
+                                                        <button class="ms_btn blue">
+                                                            Salva
+                                                        </button>
+
+                                                        <button class="ms_btn yellow">
+                                                            Reset
+                                                        </button>
+                                                    </form>
+                                                  </div>
+                                                </div>
+
+                                                
                                             </div>
+                                            
+                                            
                                         </div>
                                         <div>
                                             <!-- Head Box -->
@@ -406,44 +459,49 @@
                                                 <h2 class="py-2 fw-semibold">
                                                     F.A.Q.
                                                 </h2>
-                                            </div> 
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class=" fw-semibold accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                          Come aggiungere una nuova classe?
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                          Clicca sul + in alto a destra della tabella "Prossime Classi".
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                          Come posso accedere alle informazioni del mio account?
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                          Clicca sull'icona della campanella.
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                          Posso usare questa dashboard da mobile?
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                          È perfettamente ottimizzato per la navigazione in mobile.
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
                                         </div>
-
-                                        <p class="d-flex justify-content-between align-items-center border-bottom">
-                                            <a class="fw-semibold ms_answer py-4" data-bs-toggle="collapse" href="#question1">
-                                                Come aggiungere una nuova classe?
-                                            </a>
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                            </p>
-                                            <div class="collapse" id="question1">
-                                            <div class="border-bottom pb-3">
-                                                Clicca sul + in alto a destra della tabella "Prossime classi"
-                                            </div>
-                                            </div>
-
-                                            <p class="d-flex justify-content-between align-items-center border-bottom">
-                                            <a class="fw-semibold ms_answer" data-bs-toggle="collapse" href="#question2">
-                                                Come posso accedere alle informazioni del mio account?
-                                            </a>
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                            </p>
-                                            <div class="collapse" id="question2">
-                                            <div class="border-bottom pb-3">
-                                                Clicca sull'icona della campanella
-                                            </div>
-                                            </div>
-
-                                            <p class="d-flex justify-content-between align-items-center border-bottom">
-                                            <a class="fw-semibold ms_answer" data-bs-toggle="collapse" href="#question3">
-                                                Posso usare questa dashboard da mobile?
-                                            </a>
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                            </p>
-                                            <div class="collapse" id="question3">
-                                            <div class="border-top pb-4 pt-3">
-                                                Certo! È perfettamente ottimizzata per la navigazione da mobile
-                                            </div>
-                                            </div>
                                     </div>
                                 </div>
                             </div>                              
