@@ -3,6 +3,10 @@
     border-right: 0px solid white;
 }
 
+.ms_max_container{
+    max-width: 700px;
+}
+
 /* Header Rules */
 header{
     height: 80px;
@@ -97,11 +101,24 @@ main{
 
         .ms_plus{
            font-size: 14px;
+           padding: 10px 10px 8px;
         
         }
 
     .ms_label:hover{
         background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .ms_hidden{
+        display: none;
+    }
+
+    .ms_arrow_down{
+        display: none;
+    }
+
+    .ms_plus_container:hover .ms_hidden{
+        display: inline;
     }
 
 .ms_section_boxs{
@@ -218,17 +235,21 @@ main{
     display: block;
 }
 
-
 .ms_faq a{
     width: 100%;
 }
 
+/* Media Quary */
+@media screen and (max-width: 1058px){
+    .ms_arrow_right{
+        display: none;
+    }
 
-.ms_graphic img{
-    max-width: 100%;
+    .ms_arrow_down{
+        display: inline;
+    }
 }
 
-/* Media Quary */
 @media screen and (min-width: 992px){
     nav{
         width: 150px;
@@ -239,6 +260,17 @@ main{
 
     .ms_space-right{
         border-right: 25px solid white;
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    .ms_arrow_right{
+        display: inline;
+    }
+
+    .ms_arrow_down{
+        display: none;
     }
 }
 
