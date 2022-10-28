@@ -9,8 +9,12 @@ header{
     background-color: white;
 }
 
+header i{
+    cursor: pointer;
+}
+
 .ms_logo_md{
-    height: 40%;
+    height: 50%;
 }
 
 #ms_search{
@@ -29,7 +33,6 @@ header{
 
 #ms_search:focus{
     outline: none;
-    border: 2px solid gray;
 }
 
 #ms_search::placeholder{
@@ -39,6 +42,10 @@ header{
 #ms_bell{
     color: #ff8f00;
     font-size: 20px;
+}
+
+#ms_bell_drop:focus{
+    outline: none;
 }
 
 /* Nav Rules */
@@ -51,6 +58,15 @@ nav{
     bottom: 0px;
     left: 0px;
     width: 60px;
+    z-index: 500;
+}
+
+.ms_content_menu{
+    padding: 10px 10px;
+}
+
+.ms_content_menu:hover{
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 nav span{
@@ -73,9 +89,19 @@ main{
 
     .ms_label{
         background-color: rgba(0, 0, 0, 0.3);
-        padding: 2px 10px 5px;
+        padding: 3px 10px 3px;
         border-radius: 20px;
         font-weight: 500;
+        cursor: pointer;
+    }
+
+        .ms_plus{
+           font-size: 14px;
+        
+        }
+
+    .ms_label:hover{
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
 .ms_section_boxs{
@@ -90,7 +116,11 @@ main{
     .ms_title_box{
         background-color: #f7f7f7;
     }
-    
+
+    .ms_class_row:hover{
+        background-color: rgba(80, 80, 80, 0.2);
+    }
+
     .ms_class_icon{
         color: white;
         background-color: #f0634f;
@@ -105,7 +135,7 @@ main{
         color: white;
         padding: 1px 5px 3px;
         border-radius: 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
         .ms_class_label.ms_green{
@@ -114,6 +144,7 @@ main{
 
         .ms_class_label.ms_yellow{
             background-color: #ffc008;
+            font-size: 13px;
 
         }
 
@@ -128,7 +159,13 @@ main{
         padding: 7px 7px;
         font-size: 20px;
         color: gray;
+        cursor: pointer;
     }
+
+        .ms_class_action i:hover{
+            background-color: gray;
+            color: white;
+        }
 
     .ms_class_add{
         color: #0d6efd;
@@ -136,6 +173,11 @@ main{
         border-radius: 5px;
         padding: 10px 11px;
     }
+
+        .ms_class_add:hover{
+            background-color: #0d6efd;
+            color: white;
+        }
 
         .ms_canvas_text input{
             border-radius: 4px;
@@ -146,9 +188,10 @@ main{
 
         .ms_btn{
             border-radius: 5px;
-            padding: 2px 10px 6px;
+            padding: 5px 12px 7px;
             font-size: 14px;
             border: none;
+            font-weight: 600;
         }
 
             .ms_btn.blue{
@@ -159,6 +202,14 @@ main{
             .ms_btn.yellow{
                 background-color: #fdc03d;
             }
+
+                .ms_btn.blue:hover{
+                    background-color: #1e52b4;;
+                }
+
+                .ms_btn.yellow:hover{
+                    background-color: #e7b13c;
+                }
 
 .ms_answer{
     text-decoration: none;
@@ -188,4 +239,16 @@ main{
     .ms_space-right{
         border-right: 25px solid white;
     }
+}
+
+@media screen and (max-width: 604px){
+    .ms_class_date{
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 528px){
+    .ms_class_roi{
+        display: none;
+    }  
 }

@@ -18,7 +18,7 @@
 <body>
     
     <!-- Header -->
-    <header class="fixed-top d-flex justify-content-evenly align-items-center">
+    <header class="fixed-top d-flex justify-content-between align-items-center ps-2 pe-4">
         <!-- Small Logo -->
         <img src="img/logo-small.png" alt="logo small" class=" ms_logo_md d-lg-none">
 
@@ -27,7 +27,7 @@
 
         <!-- Search Bar -->
         <input type="search" id="ms_search" placeholder="Prova a cercare: Lezioni di Lavarel">
-
+        
         <!-- Icons -->
         <i class="fa-solid fa-list d-none d-lg-flex"></i>
         <i class="fa-solid fa-circle-question d-none d-lg-flex"></i>
@@ -35,7 +35,7 @@
 
         <!-- Bell Icon Dropdown -->
         <div class="dropdown">
-            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a href="#" id="ms_bell_drop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-bell" id="ms_bell"></i>
             </a>
           
@@ -51,22 +51,22 @@
 
         <!-- Left Menu -->
         <nav class="d-flex flex-column justify-content-between align-items-center">
-            <div class="text-white pt-4 d-flex flex-column justify-content-evenly gap-4">
-                <span>
+            <div class="text-white pt-4 d-flex flex-column justify-content-evenly">
+                <span class="ms_content_menu">
                     <i class="fa-solid fa-house"></i>
                     <span class="d-none d-lg-inline-block ps-2">
                         Home
                     </span>
                 </span>
 
-                <span>
+                <span class="ms_content_menu">
                     <i class="fa-solid fa-chart-simple"></i>    
                     <span class="d-none d-lg-inline-block ps-3">
                         Stats
                     </span>
                 </span>
 
-                <span>
+                <span class="ms_content_menu">
                     <i class="fa-solid fa-signal"></i>
                     <span class="d-none d-lg-inline-block ps-2">
                         Signals
@@ -75,7 +75,7 @@
             </div>
 
             <div class="pt-3 mb-3 text-white">
-                <span>
+                <span class="ms_content_menu">
                     <i class="fa-solid fa-gear"></i>
                     <span class="d-none d-lg-inline-block ps-2">
                         Admin
@@ -90,7 +90,7 @@
                 <!-- First Section -->
                 <section class="ms_section_directory container-fluid py-3">
                     <div class="row justify-content-between align-items-center mx-0">
-                        <div class="col-12 col-lg-4 text-white py-3">
+                        <div class="col-12 col-lg-8 text-white py-3">
                             <h2 class="d-inline-block fw-semibold fs-1">
                                 Boolean
                             </h2>
@@ -98,14 +98,30 @@
                                 Piano Blaze
                             </span>
                             <div>
-                                <span class="ms_label">
-                                    3 app
-                                </span>
-                                <i class="fa-solid fa-angles-right mx-1"></i>
 
-                                <span class="ms_label">
-                                    &plus;
+                                <span class="d-flex flex-wrap align-items-center">
+                                    <span class="ms_label">
+                                        3 app
+                                    </span>
+                                    <i class="fa-solid fa-angles-right mx-1"></i>
+    
+                                    <span class="ms_label mb-3 mt-3">
+                                        <i class="fa-solid fa-plus ms_plus"></i>
+                                    </span>
+    
+                                    <span class="ms_label d-none d-lg-inline mx-1">
+                                        Boolean mobile app
+                                    </span>
+    
+                                    <span class="ms_label d-none d-lg-inline mx-1">
+                                        Boolean web app
+                                    </span>
+    
+                                    <span class="ms_label d-none d-lg-inline mx-1">
+                                        Boolean blog app
+                                    </span>
                                 </span>
+                                
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 text-white fw-semibold fs-5 py-2">
@@ -138,7 +154,7 @@
                                                     <i class="fa-solid fa-plus ms_class_add"></i>
                                                 </a>
 
-                                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasbottomLabel">
                                                   <div class="offcanvas-header">
                                                     <h5 class="offcanvas-title fw-semibold" id="offcanvasRightLabel">
                                                         Aggiungi Classe
@@ -178,32 +194,32 @@
                                         <div>
                                             <!-- Head Box -->
                                             <div class="row border-bottom fw-bold py-3 pe-3 ps-1">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                                <div class="col-3 d-flex justify-content-start align-items-center">
                                                     Nome
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-9 d-flex justify-content-end align-items-center gap-4">
+                                                    <span> 
                                                         Data inizio
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="mx-1"> 
                                                         ROI
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="mx-1"> 
                                                         Stato
                                                     </span>
     
-                                                    <span>
+                                                    <span class="mx-1"> 
                                                         Azioni
                                                     </span>
                                                 </div>
                                             </div>
     
                                             <!-- Classe 75 -->
-                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold ms_class_row">
+                                                <div class="col-5 col-sm-4 d-flex justify-content-start align-items-center">
                                                     <span class="ms_class_icon">
                                                         <i class="fa-solid fa-code"></i>
                                                     </span>
@@ -212,12 +228,12 @@
                                                     </span>
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-7 col-sm-8 d-flex justify-content-end align-items-center gap-4">
+                                                    <span class="ms_class_date">
                                                         15 Feb 2021
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="ms_class_roi">
                                                         20%
                                                     </span>
                                                     
@@ -233,8 +249,8 @@
                                             </div>
     
                                             <!-- Classe 76 -->
-                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold ms_class_row">
+                                                <div class="col-5 col-sm-4 d-flex justify-content-start align-items-center">
                                                     <span class="ms_class_icon">
                                                         <i class="fa-solid fa-code"></i>
                                                     </span>
@@ -243,12 +259,12 @@
                                                     </span>
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-7 col-sm-8 d-flex justify-content-end align-items-center gap-4">
+                                                    <span class="ms_class_date">
                                                         16 Feb 2021
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="ms_class_roi">
                                                         20%
                                                     </span>
                                                     
@@ -264,8 +280,8 @@
                                             </div>
     
                                             <!-- Classe 77 -->
-                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold ms_class_row">
+                                                <div class="col-5 col-sm-4 d-flex justify-content-start align-items-center">
                                                     <span class="ms_class_icon">
                                                         <i class="fa-solid fa-code"></i>
                                                     </span>
@@ -274,12 +290,12 @@
                                                     </span>
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-7 col-sm-8 d-flex justify-content-end align-items-center gap-4">
+                                                    <span class="ms_class_date">
                                                         17 Feb 2021
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="ms_class_roi">
                                                         20%
                                                     </span>
                                                     
@@ -295,8 +311,8 @@
                                             </div>
     
                                             <!-- Classe 78 -->
-                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold ms_class_row">
+                                                <div class="col-5 col-sm-4 d-flex justify-content-start align-items-center">
                                                     <span class="ms_class_icon">
                                                         <i class="fa-solid fa-code"></i>
                                                     </span>
@@ -305,12 +321,12 @@
                                                     </span>
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-7 col-sm-8 d-flex justify-content-end align-items-center gap-4">
+                                                    <span class="ms_class_date">
                                                         18 Feb 2021
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="ms_class_roi">
                                                         20%
                                                     </span>
                                                     
@@ -326,8 +342,8 @@
                                             </div>
     
                                             <!-- Classe 79 -->
-                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold ms_class_row">
+                                                <div class="col-5 col-sm-4 d-flex justify-content-start align-items-center">
                                                     <span class="ms_class_icon">
                                                         <i class="fa-solid fa-code"></i>
                                                     </span>
@@ -336,12 +352,12 @@
                                                     </span>
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-7 col-sm-8 d-flex justify-content-end align-items-center gap-4">
+                                                    <span class="ms_class_date">
                                                         19 Feb 2021
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="ms_class_roi">
                                                         20%
                                                     </span>
                                                     
@@ -357,8 +373,8 @@
                                             </div>
     
                                             <!-- Classe 80 -->
-                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold ms_class_row">
+                                                <div class="col-5 col-sm-4 d-flex justify-content-start align-items-center">
                                                     <span class="ms_class_icon">
                                                         <i class="fa-solid fa-code"></i>
                                                     </span>
@@ -367,12 +383,12 @@
                                                     </span>
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-7 col-sm-8 d-flex justify-content-end align-items-center gap-4">
+                                                    <span class="ms_class_date">
                                                         20 Feb 2021
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="ms_class_roi">
                                                         20%
                                                     </span>
                                                     
@@ -388,8 +404,8 @@
                                             </div>
     
                                             <!-- Classe 81 -->
-                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                            <div class="row border-bottom py-3 py-lg-2 fw-semibold ms_class_row">
+                                                <div class="col-5 col-sm-4 d-flex justify-content-start align-items-center">
                                                     <span class="ms_class_icon">
                                                         <i class="fa-solid fa-code"></i>
                                                     </span>
@@ -398,12 +414,12 @@
                                                     </span>
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-7 col-sm-8 d-flex justify-content-end align-items-center gap-4">
+                                                    <span class="ms_class_date">
                                                         21 Feb 2021
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="ms_class_roi">
                                                         20%
                                                     </span>
                                                     
@@ -419,8 +435,8 @@
                                             </div>
     
                                             <!-- Classe 82 -->
-                                            <div class="row py-3 py-lg-2 fw-semibold">
-                                                <div class="col-6 d-flex justify-content-start align-items-center">
+                                            <div class="row py-3 py-lg-2 fw-semibold ms_class_row">
+                                                <div class="col-5 col-sm-4 d-flex justify-content-start align-items-center">
                                                     <span class="ms_class_icon">
                                                         <i class="fa-solid fa-code"></i>
                                                     </span>
@@ -429,12 +445,12 @@
                                                     </span>
                                                 </div>
     
-                                                <div class="col-6 d-flex justify-content-evenly align-items-center">
-                                                    <span>
+                                                <div class="col-7 col-sm-8 d-flex justify-content-end align-items-center gap-4">
+                                                    <span class="ms_class_date">
                                                         22 Feb 2021
                                                     </span>
                                                     
-                                                    <span>
+                                                    <span class="ms_class_roi">
                                                         20%
                                                     </span>
                                                     
