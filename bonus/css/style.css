@@ -67,10 +67,12 @@ nav{
 
 .ms_content_menu{
     padding: 10px 10px;
+    cursor: pointer;
 }
 
 .ms_content_menu:hover{
     background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
 }
 
 nav span{
@@ -107,6 +109,7 @@ main{
 
     .ms_label:hover{
         background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
     }
 
     .ms_hidden{
@@ -134,6 +137,10 @@ main{
         background-color: #f7f7f7;
     }
 
+    .ms_class_row{
+        cursor: pointer;
+    }
+    
     .ms_class_row:hover{
         background-color: rgba(80, 80, 80, 0.2);
     }
@@ -162,6 +169,7 @@ main{
         .ms_class_label.ms_yellow{
             background-color: #ffc008;
             font-size: 13px;
+            padding: 3px 6px 5px;
 
         }
 

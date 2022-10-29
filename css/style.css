@@ -145,6 +145,7 @@ main{
         .ms_class_label.ms_yellow{
             background-color: #ffc008;
             font-size: 13px;
+            padding: 3px 6px 5px;
 
         }
 
