@@ -11,9 +11,10 @@ header{
 
 header i{
     cursor: pointer;
+    font-size: 20px;
 }
 
-.ms_logo_md{
+.ms_logo_sm{
     height: 50%;
 }
 
@@ -89,7 +90,7 @@ main{
 
     .ms_label{
         background-color: rgba(0, 0, 0, 0.3);
-        padding: 3px 10px 3px;
+        padding: 3px 10px 5px;
         border-radius: 20px;
         font-weight: 500;
         cursor: pointer;
@@ -133,9 +134,9 @@ main{
 
     .ms_class_label{
         color: white;
-        padding: 1px 5px 3px;
+        padding: 3px 8px 4px;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 12px;
     }
 
         .ms_class_label.ms_green{
@@ -144,8 +145,6 @@ main{
 
         .ms_class_label.ms_yellow{
             background-color: #ffc008;
-            font-size: 13px;
-            padding: 3px 6px 5px;
 
         }
 
